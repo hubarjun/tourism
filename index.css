@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+:root{
+    --black:black;
+    --green:rgb(6, 242, 6);
+    --white:whitesmoke;
+}
+body,html{
+    overflow-x:hidden;
+    width:auto;
+}
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+}
+.landing{
+    background-image:url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    height:100vh;
+    overflow: hidden;
+}
+main{
+    background-color: rgba(0, 0, 0, 0.344);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    color:var(--white);
+    font-weight: bold;
+}
+ a{
+    text-decoration:none;
+}
+h2{
+    font-size:8vmin;
+    font-weight:600;
+}
+h1{
+    font-size:8vmin;
+}
+.content-line{
+    width:150px;
+    height:5px;
+    background-color:var(--green);
+    border-radius:15px;
+    margin-bottom:70px;
+    margin-top:8px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+.btn{
+    background-color:var(--green);
+    padding:20px 30px;
+    border-radius:30px;
+    color:var(--white);
+    font-weight:bold;
+    margin-top:60px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    width:100vw;
+    height:50px;
+    align-items:center;
+    background:linear-gradient(to right,#222222,#333333,#444444);
+    color:var(--green);
+    
+    
+}
+
+.logo{
+    flex:3;
+    font-weight:600;
+    font-size: 25px;
+    margin-left:15px;
+}
+.navlinks{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex:2;
+
+}
+ .navlinks a{
+    text-decoration:none;
+    flex:1;
+    margin-right:10px;
+    color:var(--green);
+}
+
+.event-heading{
+    text-align:center;
+    color:var(--white);
+    padding-top:50px;
+}
+section{
+    margin:auto;
+    width:100%;
+    background:var(--black);
+}
+section .row{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    color:var(--white);
+    
+}
+section .row .column img{
+    width:80%;
+    overflow:hidden;
+
+
+}
+section .row .column {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    
+}
+section .row .column h4{
+    font-size:4vmin;
+    margin:15px auto;
+
+}
+section .row .column p{
+    padding:0 40px;
+    text-align:justify;
+}
+section .row .column a{
+      margin-bottom:50px;
+}
+
+.scrollbackground
+{
+    
+    background-image:url(images/explore.jpg);
+    background-position:center;
+    background-size:cover;
+    height:100vh;
+    background-repeat: no-repeat;
+}
+
+.explore{
+    background-color:rgba(0, 0, 0, 0.317);
+    height:100vh;
+    width:100vw;
+    display:flex;
+    flex-direction:column;
+   
+}
+.explore .content{
+  width:60%;
+  color:whitesmoke;
+  margin:50px;
+
+}
+.explore .event-heading{
+    width:60%;
+}
+.explore .content p{
+    margin-bottom:50px;
+    text-align: justify;
+}
+.tours{
+    overflow: hidden;
+}
+.tours .row .content-col .content-line{
+    margin-left: 10px;
+}
+.tours .row h1{
+    margin:20px;
+}
+.content-col{
+    width:40%;
+}
+.img-col{
+    width:60%;
+}
+
+.img-gallery img{
+    width:300px;
+    margin:10px;
+}
+
+.img-gallery{
+    display:flex;
+
+}
+footer{
+    width:100%;
+    min-height:200px;
+    background:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.footer-content{
+    color:var(--white);
+    background-color:rgba(0, 0, 0, 0.64);
+}
+.footer-content p{
+    margin:20px;
+    text-align:center;
+}
+@media all and (width<700px){
+    section .row{
+        flex-direction:column;
+    }
+    .row .column{
+        margin:20px auto;
+        
+    }
+    section{
+        width:100%;
+    }
+    .explore .content{
+        width:100%;
+        margin:0px 10px;
+
+    }
+    .explore .event-heading{
+        width:100%;
+    }
+    
+    .tours .row .content-col{
+        width:100%;
+    }
+    .img-gallery{
+        flex-direction:column;
+        align-items:center;
+        justify-content: center;
+    }
+    .img-col{
+        width:100%;
+       
+    }
+
+}
