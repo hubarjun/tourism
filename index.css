@@ -142,6 +142,7 @@ section .row .column a{
 {
     
     background-image:url(images/explore.jpg);
+    background-attachment:fixed;
     background-position:center;
     background-size:cover;
     height:100vh;
